@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -21,13 +22,12 @@
                     <p>@katsse32</p>
                 </div>
                 <div class="followers">
-                    <div class="follow-count"><p>56</p><p>Post</p></div>
-                    <div class="follow-count"><p>3.8k</p><p>Followers</p></div>
-                    <div class="follow-count"><p>957</p><p>Following</p></div>
+                    <div class="follow-count"><p class="no">56</p><p class="tags">Post</p></div>
+                    <div class="follow-count"><p class="no">3.8k</p><p class="tags">Followers</p></div>
+                    <div class="follow-count"><p class="no">957</p><p class="tags">Following</p></div>
                 </div>
             </div>
             <div class="section3">
-
                 <div class="nav-menu"><img src="Assets/Icon 1.svg" alt="home"><p>Home</p></div>
                 <div class="nav-menu"><img src="Assets/Icon 2.svg" alt="search"><p>Search</p></div>
                 <div class="nav-menu"><img src="Assets/Icon 3.svg" alt="reel"><p>Reel</p></div>
@@ -39,9 +39,24 @@
         </div>
         <div class="right-nav">
             <div class="top-nav">
-                <br><br><br><br><br>
-
+                <div class="search-bar">
+                    <span class="search-icon">
+                        <img src="Assets/Icon 2.svg" alt="Search Icon">
+                    </span>
+                    <input type="text" placeholder="Search">
+                </div>
+                
+                <div class="nav-icons">
+                    <span class="icon"><img src="Assets/Logo 7.svg" alt="heart"></span> <!-- Heart icon -->
+                    <span class="icon"><img src="Assets/Logo 8.svg" alt="Message"></span> <!-- Message icon -->
+                    <button class="add-photo-btn">
+                        <span class="icon"><img src="Assets/Logo 9.svg" alt="Add Icon"></span>
+                        Add photo
+                    </button>
+                    
+                </div>
             </div>
+            
             <div class="stories">
                 <h1>Stories</h1>
                 <div class="stories-container">
@@ -59,7 +74,7 @@
             <div class="feed">
                 
                 <div class="feed-post">
-                    <div class="post">
+                    <div class="post post1">
                         <img src="Assets/Post 1.png" alt="Post">
                         <div class="post-button">
                             <div class="left-button">
@@ -72,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post">
+                    <div class="post post2">
                         <img src="Assets/Post 4.png" alt="Post">
                         <div class="post-button">
                             <div class="left-button">
@@ -87,7 +102,7 @@
                     </div>
                 </div>
                 <div class="feed-post">
-                    <div class="post">
+                    <div class="post post1">
                         <img src="Assets/Post 2.png" alt="Post">
                         <div class="post-button">
                             <div class="left-button">
@@ -100,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post">
+                    <div class="post post2">
                         <img src="Assets/Post 5.png" alt="Post">
                         <div class="post-button">
                             <div class="left-button">
@@ -115,7 +130,7 @@
                     </div>
                 </div>
                 <div class="feed-post">
-                    <div class="post">
+                    <div class="post post1">
                         <img src="Assets/Post 3.png" alt="Post">
                         <div class="post-button">
                             <div class="left-button">
@@ -128,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post">
+                    <div class="post post2">
                         <img src="Assets/Post 6.png" alt="Post">
                         <div class="post-button">
                             <div class="left-button">
