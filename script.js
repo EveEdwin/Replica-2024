@@ -119,3 +119,16 @@ gsap.utils.toArray(".stories-container img").forEach((img) => {
         });
     });
 });
+
+// Select all favorite icons
+const favoriteIcons = document.querySelectorAll('.add-favorite');
+
+favoriteIcons.forEach((favoriteIcon) => {
+    favoriteIcon.addEventListener('click', function() {
+        if (favoriteIcon.src== "http://127.0.0.1:5500/Assets/Logo%207.svg") {
+            favoriteIcon.src = "Assets/Logo 10.svg";
+        } else {
+            favoriteIcon.src = "Assets/Logo 7.svg";
+        }
+    });
+});
