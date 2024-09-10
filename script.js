@@ -119,7 +119,9 @@ const favoriteIcons = document.querySelectorAll('.add-favorite');
 
 favoriteIcons.forEach((favoriteIcon) => {
     favoriteIcon.addEventListener('click', function() {
-        if (favoriteIcon.src== "http://127.0.0.1:5500/Assets/Logo%207.svg") {
+        const currentSrc = favoriteIcon.src;
+
+        if (currentSrc.includes("Logo%207.svg")) { // Check if current src is Logo 7
             favoriteIcon.src = "Assets/Logo 10.svg";
         } else {
             favoriteIcon.src = "Assets/Logo 7.svg";
